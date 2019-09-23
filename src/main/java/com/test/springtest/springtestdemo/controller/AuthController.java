@@ -31,7 +31,7 @@ public class AuthController {
         logger.info("message = Calling FSAPI to validate login");
         LoginResponse loginResponse = new LoginResponse();
         loginResponse.setResponseCode("00");
-        loginResponse.setResponseMsg("Successful12");
+        loginResponse.setResponseMsg("Successful13");
         return new ResponseEntity<>(loginResponse, HttpStatus.OK);
     }
 
