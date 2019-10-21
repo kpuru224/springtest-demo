@@ -21,7 +21,6 @@ public class AuthController {
 
     protected Logger logger = LoggerFactory.getLogger(getClass());
 
-
     @PostMapping(value = "/authenticate", consumes = {MediaType.APPLICATION_JSON_VALUE}, produces = {MediaType.APPLICATION_JSON_VALUE})
     @ApiResponses(value = {@ApiResponse(code = 401, message = "UNAUTHORIZED", response = LoginResponse.class),
             @ApiResponse(code = 200, message = "OK", response = LoginResponse.class)
